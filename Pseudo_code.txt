@@ -1,0 +1,72 @@
+space must be clear
+no dupes in 3x3 square
+last coord is valid
+
+
+for loop (9 times){
+	do{
+		get random x,y
+		if (last coord is invalid){
+			remove all num
+			redraw all num
+		}
+	}
+	while (space is empty and there are no dupes in 3x3 square);
+	write num 
+	remove random x,y
+}
+
+
+
+
+while(i<10){
+	while(drawNumber failed){
+		
+	}
+}
+
+
+loop big row{
+	loop big col{
+
+		loop small row{
+			loop small col{
+				add all items
+			}
+		}
+		y += 3;
+	}
+	y = 0;
+	x += 3;
+}
+
+
+loop through 5 rows{
+	loop through 6-7 times{
+		choose random num between 0-8
+		remove row, random
+		remove 8-row, random
+	}
+}
+
+
+solveSudoku(){
+	if board is full{
+		return true
+	}
+	for number of empty cells{
+		for n = 1-9{
+			if numValid{
+				place n
+				if solveSudoku(){
+					return true;
+				}
+				else{
+					remove n
+				}
+			}
+		}
+	}
+	return false
+		
+}
